@@ -1,0 +1,889 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+body{
+    font-family: sans-serif;
+}
+h2{
+    font-size: 36px;
+    font-weight: normal;
+}
+h2.has-first-block{
+    position: relative;
+    padding-left: 34px;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+h2.has-first-block:before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 10px;
+    height: 35px;
+    background-color:#e1e6ea ;
+    display: inline-block;
+}
+header{
+    background-color: #1d2126;
+    height: 81px;
+}
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header .container h1 a{
+    line-height: 81px;
+}
+header .container ul li{
+    display: inline-block;
+}
+header .container ul li a{
+    line-height: 81px;
+    border-radius: 3px;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    color: #a4aead;
+    border: 2px solid transparent;
+    margin-left:16px ;
+}
+header .container ul li a.active{
+    color: #23b7a4;
+    border: 2px solid #23b7a4 ;
+}
+header .container ul li a.active:hover{
+    border: 2px solid #23b7a4 ;
+}
+header .container ul li a:hover{
+    border-radius: 3px;
+    border:2px solid #5b6168;
+}
+
+#hero{
+    height: 660px;
+    background-image: url(Image/banner.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #3a454d;
+}
+#hero .container h2, #hero .container p, #hero .container div{
+    max-width: 650px;
+}
+#hero .container{
+    position: relative;
+    padding-top:222px ;
+    height: 660px;
+}
+#hero .container h2{
+    font-size: 36px;
+    color: white;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#hero .container p{
+    font-size: 16px;
+    margin-bottom: 35px;
+    color: #ccd0d7;
+    line-height: 26px;
+}
+#hero .container div a{
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 10px 30px;
+    margin-right: 11px;
+}
+#hero .container div a:hover{
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+}
+#hero .container ul{
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+}
+#hero .container ul li{
+    display: inline-block;
+}
+#hero .container ul li a{
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border: 2px solid white;
+    text-indent: -1000000px;
+    border-radius: 50%;
+}
+#hero .container ul li a.current{
+    background-color: white;
+}
+#about .container > div {
+    display:flex;
+    justify-content: space-between;
+}
+/* about */
+#about{
+    border-bottom:1px solid #dde1e4;
+}
+#about .container{
+    padding-top: 77px;
+    padding-bottom: 100px;
+}
+#about .container h2{
+    margin-bottom: 60px;
+}
+#about .container > div  div:first-child{
+    width: 654px;
+}
+
+#about .container > div  div:last-child{
+    width: 457px;
+}
+
+#about .container > div > div > p:nth-child(1){
+    line-height: 26px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+#about .container > div > div > p:nth-child(2){
+    line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+#about .container ul li:first-child{
+    margin-left:0px;
+}
+#about .container ul li{
+    display: inline-block;
+    margin-left:-3px;
+}
+#about .container ul li a{
+    margin-right: 0;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #c8cdd0;
+    text-indent: -100000px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#about .container ul li a:hover{
+    background-color: #d0d5d9;
+}
+
+#about .container ul li:nth-child(1) a{
+    background-image: url(Image/Social-NetWork/Fb.png);
+}
+#about .container ul li:nth-child(2) a{
+    background-image: url(Image/Social-NetWork/Twitter.png);
+}
+#about .container ul li:nth-child(3) a{
+    background-image: url(Image/Social-NetWork/google.png);
+}
+#about .container ul li:nth-child(4) a{
+    background-image: url(Image/Social-NetWork/NetWork.png);
+}
+#about .container ul li:nth-child(5) a{
+    background-image: url(Image/Social-NetWork/Be.png);
+}
+#about ol{
+    counter-reset: about;
+}
+#about ol li{
+    list-style: none;
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 35px;
+}
+#about ol li:before{
+    position: absolute;
+    counter-increment: about;
+    content: counters(about,'.',decimal-leading-zero);
+    width: 50px;
+    height: 50px;
+    background-color: #23b7a4;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+#about ol li h3{
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+#about ol li p{
+    line-height: 26px;
+}
+
+/* ===============TEAM============== */
+
+
+#team{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+#team-list{
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+#team-list > div{
+    width: calc((100% - 90px ) / 4);
+}
+#team-list > div > div > img{
+    display: block;
+    max-width: 100%;
+}
+#team-list div .info{
+    height: 74px;
+    background-color: #e1e6ea;
+    padding: 0px 20px;
+}
+#team-list div .info h4{
+    text-transform: uppercase;
+    color: #292f36;
+    font-weight: normal;
+    font-size: 16px;
+    padding-top: 20px;
+}
+#team-list div .info p{
+    padding-top: 4px;
+    color: #8d8f92;
+    font-size: 14px;
+}
+
+#team-list > div:hover{
+    cursor: pointer;
+}
+
+#team-list > div:hover .info{
+    background-color: #3a454d;
+}
+#team-list > div:hover .info h4,
+#team-list > div:hover .info p{
+    color: white;
+}
+
+#team-list div div{
+    position: relative;
+}
+#team-list .mask{
+    display: none;
+}
+#team-list div:hover .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+}
+#team-list div div .mask ul{
+    letter-spacing: -3.3px;
+}
+#team-list div div .mask ul li{
+    display: inline-block;
+}
+#team-list div div .mask ul li a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #3a454d;
+    text-indent: -100000px;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px;
+}
+#team-list div div .mask ul li:nth-child(1) a{
+    background-image: url(Image/Social-NetWork/Twitter.png);
+}
+#team-list div div .mask ul li:nth-child(2) a{
+    background-image: url(Image/Social-NetWork/Fb.png);
+}
+#team-list div div .mask ul li:nth-child(3) a{
+    background-image: url(Image/Social-NetWork/LinkIn.png);
+}
+#team-list div div .mask ul li a:hover{
+    background-color: #4e5a62;
+}
+
+/* ==================LOVELY WORK=============== */
+
+#work{
+    background-color: #3a454d;
+    padding-top: 80px;
+    padding-bottom:60px;
+}
+#work h2{
+    padding-bottom: 60px;
+    color: white;
+}
+#work h2.has-first-block:before{
+    background-color:#4e5a62 ;
+}
+#work .container div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#work .container .mask{
+    display: none;
+}
+#work .container div div{
+    width: calc((100% - 60px) / 3);
+    position: relative;
+    margin-bottom: 30px;
+}
+#work .container div div:hover{
+    cursor: pointer;
+}
+#work .container div div img{
+    max-width: 100%;  
+}
+
+#work .container div div:hover .mask{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: rgba(41, 47, 54, 0.5) url(Image/Lovely-Work/plus.png) no-repeat center 95px;
+}
+#work .container div div:hover .mask h4{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    background: #292f36;
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 60px;
+    padding: 0px 20px;
+}
+#work #action{
+    text-align: center;
+    width: 100%;
+    display: block !important;
+    margin-top: 30px;
+}
+#work div#action button{
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font: normal;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+#work div#action button:hover{
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+}
+/* =======================WHAT WE DO================== */
+#what-we-do{
+    padding-bottom: 65px;
+}
+#what-we-do h2{
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+#what-we-do ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#what-we-do ul li{
+    width: calc((100% - 90px) / 4);
+    text-align: center;
+    margin-bottom: 95px;
+}
+#what-we-do ul li:before{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 47px 47px;
+}
+#what-we-do ul li:nth-child(1):before{
+    background-image: url(Image/What-We-Do/Setting.png);
+}
+#what-we-do ul li:nth-child(2):before{
+    background-image: url(Image/What-We-Do/Pencil.png);
+}
+#what-we-do ul li:nth-child(3):before{
+    background-image: url(Image/What-We-Do/mobile.png);
+}
+#what-we-do ul li:nth-child(4):before{
+    background-image: url(Image/What-We-Do/clock.png);
+}
+#what-we-do ul li:nth-child(5):before{
+    background-image: url(Image/What-We-Do/Setting.png);
+}
+#what-we-do ul li:nth-child(6):before{
+    background-image: url(Image/What-We-Do/Pencil.png);
+}
+#what-we-do ul li:nth-child(7):before{
+    background-image: url(Image/What-We-Do/mobile.png);
+}
+#what-we-do ul li:nth-child(8):before{
+    background-image: url(Image/What-We-Do/clock.png);
+}
+#what-we-do ul li h4{
+    font-size: 17px;
+    margin-top: 35px;
+    margin: 25px;
+    font-weight: normal;
+    color: #292f36;
+    text-transform: uppercase;
+}
+#what-we-do ul li p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+}
+
+/* -------------------FEATURE----------------- */
+
+#feature{
+    background-color: #3a454d;
+    padding-top: 85px;
+    padding-bottom: 115px;
+}
+#feature h2{
+    padding-bottom: 60px;
+    color: white;
+}
+#feature h2.has-first-block:before{
+    background-color:#4e5a62 ;
+}
+#feature .container div{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+}
+#feature .container div div{
+    width: calc((100% - 60px) / 3);
+}
+#feature .container div div img{
+    display: block;
+    max-width: 100%;
+}
+#feature .container div div h4{
+    font-size: 18px;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-top: 42px;
+    padding-bottom: 31px;
+}
+#feature .container div div p{
+    font-size: 16px;
+    color:#dcdfe1;
+    line-height: 26px;
+}
+/* ============STAY IN---------------- */
+#contact{
+    padding-bottom: 95px;
+}
+#contact #contact-info{
+    z-index: 2;
+    margin-top: -130px;
+    display: flex;
+    justify-content: space-between;
+}
+#contact h2{
+    margin-top: 64px;
+    margin-bottom: 60px;
+}
+#contact #map{
+    z-index: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(Image/map.png);
+    background-size: cover;
+    height: 346px;
+    width: 100%;
+}
+#contact #contact-info > div,
+#contact #contact-info > form{
+    width: calc((100% - 30px) / 2);
+}
+#contact #contact-info > div{
+    padding-top: 187px;
+}
+#contact #contact-info > div h4{
+    font-size: 20px;
+    color: #292f36;
+    margin-bottom: 37px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-left: 8px;
+}
+#contact #contact-info > div p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+    margin-bottom: 26px;
+}
+
+#contact #contact-info form{
+    background-color: white;
+    padding: 30px;
+}
+#contact #contact-info form #two-col{
+    display: flex;
+    justify-content: space-between;
+}
+#contact #contact-info form #two-col div{
+    width: calc((100% - 30px) / 2);
+}
+#contact #contact-info form #two-col input{
+    width: 100%;
+    border-radius: 3px;
+    background-color: #eaeef1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+#contact #contact-info form label{
+    display: block;
+    color: #8d8f92;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 6px;
+    line-height: 26px;
+    padding-bottom: 10px;
+}
+#contact #contact-info #messages label{
+    margin-top: 30px;
+}
+#contact #contact-info #messages textarea{
+    width: 100%;
+    border-radius: 3px;
+    background-color: #eaeef1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    line-height: 20px;
+    max-height: 160px;
+}
+#contact #contact-info #action{
+    
+}
+#contact #contact-info button{
+    margin-top: 30px;
+    color: white;
+    background-color: #23b7a4;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 0px 30px;
+    cursor: pointer;
+    line-height: 44px;
+    height:44px ;
+    
+}
+
+footer{
+    height: 95px;
+    background-color: #3a454d;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+footer div p{
+    font-size: 14px;
+    color: white;
+    font-weight: normal;
+    line-height: 95px;
+}
+
+footer div ul li{
+    display: inline-block;
+}
+footer div ul li a{
+    display: inline-block;
+    width: 25px;
+    line-height: 95px;
+    text-indent: -100000px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+footer div ul li:nth-child(1) a{
+    background-image: url(Image/Social-NetWork/Twitter.png);
+}
+
+footer div ul li:nth-child(2) a{
+    background-image: url(Image/Social-NetWork/Skype.png);
+}
+footer div ul li:nth-child(3) a{
+    background-image: url(Image/Social-NetWork/Fb.png);
+}
+footer div ul li:nth-child(4) a{
+    background-image: url(Image/Social-NetWork/Be.png);
+}
+footer div ul li:nth-child(5) a{
+    background-image: url(Image/Social-NetWork/LinkIn.png);
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 960px){
+
+    #hero{
+        height: 575px;
+    }
+    #hero .container{
+        padding-top: 140px;
+    }
+    #hero .container h2,
+    #hero .container p,
+    #hero .container div{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #hero .container ul{
+        position: static;
+        text-align: center;
+        margin-top: 80px;
+    }
+    header .container ul li a {
+        line-height: 60px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 854px){
+    header {
+        height: auto;
+    }
+    header .container {
+        display: block;
+    }
+    header .container h1{
+        text-align: center;
+    }
+    header .container ul{
+        text-align: center;
+    }
+    header .container ul li a {
+        line-height: 45px;
+    }
+    header .container h1 a{
+        line-height: 45px;
+    }
+}
+@media screen and (max-width: 768px){
+    #hero .container{
+        height: 575px;
+    }
+    #about .container {
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }   
+    #about .container > div{
+        display: block;
+    }
+    #about .container h2 {
+        margin-bottom: 30px;
+    }
+    #about .container > div div:first-child,
+    #about .container > div div:last-child{
+        width: 100%;
+    }
+    #about .container > div div:first-child{
+        margin-bottom: 40px;
+    }
+    #about .container > div > div > p:nth-child(1) {
+        margin-bottom: 15px;
+    }
+    #about .container > div > div > p:nth-child(2) {
+        margin-bottom: 60px;
+    }
+    #about .container ul{
+        text-align: center;
+    }
+    #team {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    #team-list {
+        margin-top: 40px;
+        flex-wrap: wrap;    
+    }
+    #team-list > div {
+        width: calc((100% - 30px ) / 2);
+        margin-bottom: 30px;
+    }
+    #team-list > div > div > img {
+        width: 100%;
+    }
+    #work {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #work h2{
+        padding-bottom: 40px;
+    }
+    #work .container div div{
+        width: calc((100% - 30px) / 2);
+    }
+    #what-we-do {
+        padding-bottom: 35px;
+    }
+    #what-we-do ul li {
+        width: calc((100% - 30px) / 2);
+        margin-bottom: 40px;
+    }
+    #what-we-do h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #what-we-do ul li h4{
+        margin-bottom: 7px;
+    }
+    #feature {
+        padding-top: 45px;
+        padding-bottom: 90px;
+    }
+    #feature h2 {
+        padding-bottom: 40px;
+    }
+    #contact{
+        padding-bottom: 60px;
+    }
+    #contact h2 {
+        margin:30px 0px;
+    }
+    #contact h2.has-first-block:before{
+        margin-left: 15px;
+    }
+    #contact #contact-info form #two-col{
+        display: block;
+    }
+    #contact #contact-info form #two-col div{
+        width: 100%;
+    }
+    #contact #contact-info form #two-col > div{
+        margin-bottom: 10px;
+    }
+    #contact #contact-info {
+        margin-top: 0px;
+        display: block;
+    }
+    #contact #contact-info > div {
+        padding-top: 40px;
+        width: 100%;
+    }
+    #contact #contact-info form{
+        padding: 0px;
+        width:100%;
+    }
+    #contact #contact-info #action {
+        text-align: center;
+    }
+    #contact #contact-info button {
+        width: 100%;
+    }
+    #contact #contact-info > div h4 {
+        padding-left: 0px;
+    }
+    #feature {
+        padding-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    #feature .container div div{
+        width: 100%;
+    }
+    #feature .container div div img{
+        margin: 0px auto;
+        display: block;
+    }
+    #feature .container div div h4{
+        text-align: center;
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 5px;
+    }
+    #feature .container div div {
+        margin-bottom: 50px;
+    }
+    #feature .container div div p{
+        text-align: center;
+        width: 100%;
+    }
+    footer{
+        height: auto;
+    }
+    footer div{
+        display: block;
+    }
+    footer div p{
+        line-height: 20px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    footer div ul{
+        text-align: center;
+    }
+    footer div ul li a {
+        line-height: 45px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #team-list > div{
+        width: 100%;
+    }
+    #work .container div div{
+        width: 100%;
+    }
+    #work .container div div img{
+        width: 100%;
+        max-width: 100%;
+        display: block;
+    }
+    #what-we-do ul li{
+        width: 100%;
+    }
+
+}
