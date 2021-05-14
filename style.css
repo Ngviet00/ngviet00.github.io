@@ -275,6 +275,7 @@ header .container ul li a:hover{
 
 #team-list > div:hover .info{
     background-color: #3a454d;
+    transition: all 0.75s;
 }
 #team-list > div:hover .info h4,
 #team-list > div:hover .info p{
